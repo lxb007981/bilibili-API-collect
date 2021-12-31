@@ -6,7 +6,7 @@ module.exports = {
     },
     title: 'bilibili-API-collect',
     description: '',
-    base: '/github-action-test/',
+    base: '/bilibili-API-collect/',
     dest: 'dist',
     markdown: {
         html: true,
@@ -19,7 +19,7 @@ module.exports = {
              * add base url before absolute url (/imgs/foo.png --> /base/imgs/foo.png)
              */
             const { parse } = require('node-html-parser');
-            const base = '/github-action-test'; // no trailing slash!
+            const base = '/bilibili-API-collect'; // no trailing slash!
             md.renderer.rules.image = function (tokens, idx, _options, _env, _self) {
                 const token = tokens[idx],
                     aIndex = token.attrIndex('src'),
